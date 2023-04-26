@@ -1,6 +1,5 @@
 #include "main.h"
 
-/* PRINTING AN UNSIGNED NUMBER */
 /**
  * print_unsigned - _printf's an unsigned number
  * @types: Lists all of arguments
@@ -36,8 +35,6 @@ num /= 10; }
 return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
-
-/* PRINTING UNSIGNED NUMBER IN OCTAL NOTATION */
 /**
  * print_octal - _printf an unsigned number in octal notation
  * @types: Lists of all arguments
@@ -75,8 +72,6 @@ buffer[--i] = '0';
 return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
-
-/* PRINTING AN UNSIGNED NUMBER IN HEXADECIMAL NOTATION */
 /**
  * print_hexadecimal - prints an unsigned number in hexadecimal notation
  * @types: Lists of the arguments
@@ -94,8 +89,6 @@ int print_hexadecimal(va_list types, char buffer[], int flags,
 return (print_hexa(types, "0123456789abcdef", buffer, flags,
 		   'x', width, precision, size)); }
 
-
-/* PRINTS UNSIGNED NUMBER IN UPPER HEXADECIMAL NOTATION*/
 /**
  * print_hexa_upper - prints an unsigned number in upper hexadecimal notation
  * @types: lists of the arguments
@@ -114,7 +107,6 @@ return (print_hexa(types, "0123456789ABCDEF", buffer,
 		   flags, 'X', width, precision, size)); }
 
 
-/* PRINTS HEXADECIMAL NUMBERS IN LOWER OR UPPER */
 /**
  * print_hexa - prints a hexadecimal number in either lower or upper
  * @types: lists of the arguments
